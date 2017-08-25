@@ -1,0 +1,10 @@
+D:\Bscs(Hon)\Asp.net\Projects\LibraryManagmentSystem\LibraryManagmentSystem\bin\Debug\LibraryManagmentSystem.exe.config
+D:\Bscs(Hon)\Asp.net\Projects\LibraryManagmentSystem\LibraryManagmentSystem\bin\Debug\LibraryManagmentSystem.exe
+D:\Bscs(Hon)\Asp.net\Projects\LibraryManagmentSystem\LibraryManagmentSystem\bin\Debug\LibraryManagmentSystem.pdb
+D:\Bscs(Hon)\Asp.net\Projects\LibraryManagmentSystem\LibraryManagmentSystem\obj\Debug\LibraryManagmentSystem.csprojResolveAssemblyReference.cache
+D:\Bscs(Hon)\Asp.net\Projects\LibraryManagmentSystem\LibraryManagmentSystem\obj\Debug\LibraryManagmentSystem.Login.resources
+D:\Bscs(Hon)\Asp.net\Projects\LibraryManagmentSystem\LibraryManagmentSystem\obj\Debug\LibraryManagmentSystem.Properties.Resources.resources
+D:\Bscs(Hon)\Asp.net\Projects\LibraryManagmentSystem\LibraryManagmentSystem\obj\Debug\LibraryManagmentSystem.csproj.GenerateResource.Cache
+D:\Bscs(Hon)\Asp.net\Projects\LibraryManagmentSystem\LibraryManagmentSystem\obj\Debug\LibraryManagmentSystem.exe
+D:\Bscs(Hon)\Asp.net\Projects\LibraryManagmentSystem\LibraryManagmentSystem\obj\Debug\LibraryManagmentSystem.pdb
+D:\Bscs(Hon)\Asp.net\Projects\LibraryManagmentSystem\LibraryManagmentSystem\obj\Debug\LibraryManagmentSystem.MDI_user.resources
