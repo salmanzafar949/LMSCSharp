@@ -18,13 +18,7 @@ namespace LibraryManagmentSystem
         {
             InitializeComponent();
         }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-        }
-
-        private void view_books_Load(object sender, EventArgs e)
+        public void display_books()
         {
             try
             {
@@ -43,6 +37,16 @@ namespace LibraryManagmentSystem
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void view_books_Load(object sender, EventArgs e)
+        {
+            display_books();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -113,5 +117,63 @@ namespace LibraryManagmentSystem
                 MessageBox.Show("Enter a book name to search");
             }
         }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            panel1.Visible = true;
+            int i;
+            i = Convert.ToInt32( dataGridView1.SelectedCells[0].Value.ToString() );
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = conn.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "select * from books_info where id='"+ i +"'";
+                cmd.ExecuteNonQuery();
+                DataTable dt = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+                
+                foreach(DataRow dr in dt.Rows)
+                {
+                    book_name.Text = dr["book_name"].ToString();
+                    Author_name.Text = dr["book_author"].ToString();
+                    publish_date.Value = Convert.ToDateTime( dr["book_p_date"].ToString() );
+                    publication_name.Text = dr["book_p_name"].ToString();
+                    book_price.Text = dr["book_price"].ToString();
+                    book_quantity.Text = dr["books_quantity"].ToString();
+                }
+
+
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int i;
+            i = Convert.ToInt32(dataGridView1.SelectedCells[0].Value.ToString());
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = conn.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "update books_info set book_name='"+ book_name.Text +"', book_author='"+ Author_name.Text  +"', book_p_date='"+ Convert.ToDateTime( publish_date.Value ) +"', book_p_name='"+ publication_name.Text +"', book_price='"+ book_price.Text +"', books_quantity='"+ book_quantity.Text +"' where id='"+ i +"' ";
+                cmd.ExecuteNonQuery();
+                conn.Close();
+                display_books();
+                MessageBox.Show("Record Updated Successfully...!!!!");
+                panel1.Visible = false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
     }
 }
