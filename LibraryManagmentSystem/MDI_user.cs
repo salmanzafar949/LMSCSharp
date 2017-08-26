@@ -110,5 +110,11 @@ namespace LibraryManagmentSystem
             this.Hide();
             ab.Show();
         }
+
+        private void viewBooksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            view_books vb = new view_books();
+            vb.Show();
+        }
     }
 }
