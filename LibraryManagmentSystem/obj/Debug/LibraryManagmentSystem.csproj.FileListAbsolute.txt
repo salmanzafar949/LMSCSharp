@@ -8,3 +8,4 @@ D:\Bscs(Hon)\Asp.net\Projects\LibraryManagmentSystem\LibraryManagmentSystem\obj\
 D:\Bscs(Hon)\Asp.net\Projects\LibraryManagmentSystem\LibraryManagmentSystem\obj\Debug\LibraryManagmentSystem.exe
 D:\Bscs(Hon)\Asp.net\Projects\LibraryManagmentSystem\LibraryManagmentSystem\obj\Debug\LibraryManagmentSystem.pdb
 D:\Bscs(Hon)\Asp.net\Projects\LibraryManagmentSystem\LibraryManagmentSystem\obj\Debug\LibraryManagmentSystem.MDI_user.resources
+D:\Bscs(Hon)\Asp.net\Projects\LibraryManagmentSystem\LibraryManagmentSystem\obj\Debug\LibraryManagmentSystem.add_book.resources
